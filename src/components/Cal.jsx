@@ -80,7 +80,7 @@ const handleClear=()=>{
       <motion.div initial={{ opacity: 0, scale: 0.5 }}
                 animate={{ opacity: 1, scale: 1 }}
                 transition={{ delay: 1.5, duration: 0.9 }} 
-                className='grid grid-cols-2 items-center gap-4 text-lg mx-4 px-6 py-6 my-8 shadow-xs shadow-[#008080] rounded-2xl'>
+                className='grid grid-cols-2 items-center gap-4 text-lg mx-4 px-6 py-6 mt-6 shadow-xs shadow-[#008080] rounded-2xl'>
 
       <label className='text-[#800080]'>City </label>
       <input className='w-38 h-12 px-6 border border-[#800080] rounded-2xl' type="text" value={currentCity} onChange={(e)=>updateCity(e.target.value)} placeholder='Enter Your City..'/>
@@ -111,10 +111,10 @@ const handleClear=()=>{
        </select>
 
       </motion.div>
-
+    <div className='italic text-gray text-gray-700 text-xs py-6'>Note : 5% Service Management fee Automatically added. </div>
       <div className='flex  justify-center items-center gap-4 px-6'>
-       <button onClick={handleCalculate} className='bg-[#008080]  py-2 rounded-2xl w-36 text-white font-semibold cursor-pointer'>Calculate</button>
-       <button onClick={handleClear} className='bg-[#008080]  py-2 rounded-2xl w-36 text-white font-semibold cursor-pointer'>Clear</button>
+       <button onClick={handleCalculate} className='bg-[#008080] hover:bg-white hover:text-[#008080] border hover:border-[#008080] py-2 rounded-2xl w-36 text-white font-semibold cursor-pointer'>Calculate</button>
+       <button onClick={handleClear} className='bg-[#008080] hover:bg-white hover:text-[#008080] border hover:border-[#008080] py-2 rounded-2xl w-36 text-white font-semibold cursor-pointer'>Clear</button>
        </div>
 
        <div className='flex gap-4 mt-4 py-2 justify-center items-center bg-purple-200 w-full  text-xl text-purple-950 font-semibold'>
